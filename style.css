@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Geist", sans-serif; */
+  font-family: "DM Sans", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 7vh;
+  background: #0c0c0c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  color: white;
+}
+
+.nav {
+  width: 60%;
+  
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 5px;
+
+}
+
+
+.nav > li {
+  list-style: none;
+  margin: 0 20px;
+}
+.nav > li > a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav > li a:hover {
+  color: #717070;
+}
+
+.hero {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-image: url("https://cdn.pixabay.com/photo/2017/03/13/17/26/ecommerce-2140603_640.jpg");
+  /* background: #ffffff; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: black;
+}
+
+.hero > h1,
+h3 {
+  filter: drop-shadow(0 1px 2px rgba(255, 255, 255, 0.25));
+}
+
+.hero > button {
+  color: white;
+  background: rgb(19, 18, 18);
+  border-radius: 10px;
+  width: 120px;
+  height: 30px;
+  cursor: pointer;
+}
+.hero > button:hover {
+  color: white;
+  background: rgb(46, 45, 45);
+}
+
+.products {
+  width: 100%;
+  min-height: 100vh;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: start;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.product {
+  border: 1px solid rgba(0, 0, 0, 0.505);
+  border-radius: 12px;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.5));
+  background: white;
+  width: 200px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 40px;
+}
+
+.product > img {
+  border-radius: 5px;
+}
+
+.product > h1 {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.product > h3 {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.footer {
+  width: 100%;
+  height: 40vh;
+  background: #0c0c0c;
+  display: flex;
+  color: white;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+.footer > .name {
+  width: 100%;
+  height: 30%;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer > .footer-data {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer > .footer-data > div {
+  margin: 40px;
+  padding-right: 40px;
+}
+
+.footer > .copyright {
+  width: 100%;
+  height: 10%;
+  text-align: center;
+
+}
+
+.border-end{
+  border-right: 1px solid #ffffff;
+}
